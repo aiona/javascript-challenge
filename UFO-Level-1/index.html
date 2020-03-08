@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>UFO Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+      
+<body>
+    <div class="wrapper">
+        
+        <div class="hero text-center">
+            <h1>UFO Sightings</h1>
+            <p>The Truth is Out There</p>
+        </div>
+        <div class="container">
+            <div class="row margin-top-50">
+                <div class ="col-md-2">
+                    <form>
+                        <div class="form-group">
+                            <label for="filters">Search by Date</label>
+                            <input class="form-control" id="select-dates" name="dates" type="text" placeholder="Date">
+                            <button id="filter-btn" type="button" class="btn btn-default">Filter</button>
+                        </div>
+
+                        
+                        <!-- <div class="form-group">
+                            <label for="filters">Search by City</label>
+                            <input class="form-control" id="select-cities" name="cities" type="text" placeholder="City">
+                        </div> -->
+
+                        
+                    </form>
+                </div>
+                <div class="col-md-9">
+                    <table id="my-table" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Country</th>
+                                <th>Shape</th>
+                                <th>Duration</th>
+                                <th>Comments</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+        <script src="static/js/data.js"></script>
+        <script src="static/js/app.js"></script>
+    
+</body>
+  
+</html>
